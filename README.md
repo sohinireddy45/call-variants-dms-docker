@@ -8,7 +8,7 @@
 
 This repository provides a **Dockerized version** of the `call_variants.py` workflow from the [barakcohenlab/crx-dms-manuscript](https://github.com/barakcohenlab/crx-dms-manuscript) repository.
 
-> **Original authorship and scientific implementation** of the variant-calling logic belongs to James Gagnon and the Barak Cohen Lab.  
+> **Original authorship and implementation** of the variant-calling logic belongs to James Gagnon and the Barak Cohen Lab.  
 > This repository **does not modify or reinterpret** the core logic.  
 > Our lab's contribution is to **containerize** the environment (Python + Rust) and make the pipeline **portable and reproducible** for HPC use.
 
@@ -32,8 +32,4 @@ docker pull sohinireddy0205/call-variants-dms-base:latest
      python3 /mnt/call_variants_changable.py \
              /mnt/input.paf \
              /mnt/barcode_variant_map.tsv
-```
-
----
-
 ```
