@@ -10,7 +10,7 @@ This repository provides a **Dockerized version** of the `call_variants.py` work
 
 > **Original authorship and implementation** of the variant-calling logic belongs to James Gagnon and the Barak Cohen Lab.  
 > This repository **does not modify or reinterpret** the core logic.  
-> Our lab's contribution is to **containerize** the environment (Python + Rust) and make the pipeline **portable and reproducible** for HPC use.
+> Our lab's contribution was to **containerize** the environment (Python + Rust) and make the pipeline **reproducible** for HPC use.
 
 ---
 
