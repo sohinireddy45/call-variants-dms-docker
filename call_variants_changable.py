@@ -31,7 +31,7 @@ if __name__ == "__main__":
 
         try:
             
-            #print(f"Barcode {bc}: ref_start={record.target_start}, ref_end={record.target_end}")
+            
             
             bc = record.alignment_subset(8238, 8253).upper()
             if len(bc) != 16:
@@ -41,7 +41,7 @@ if __name__ == "__main__":
                 barcode_to_variant_map[bc] = Counter()
 
             try:
-                #print(f"Barcode {bc}: ref_start={record.target_start}, ref_end={record.target_end}")
+                
                 variants = record.call_coding_variants(7791, 8202)
             except ValueError as e:
                 print(f"Variant calling error for barcode {bc}: {str(e)}")
