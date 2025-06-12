@@ -26,8 +26,10 @@ docker pull sohinireddy0205/call-variants-dms-base:latest
 * A `.paf` file generated from PacBio HiFi reads aligned with `minimap2`
 * A `call_variants_changable.py` script (included or customized)
 
-> * Note: The gene region is passed as (7791, 8202) due to Python's 0-based indexing, even though the actual coding region starts at position 7792. The barcode is extracted from exact positions 8238–8253, which are already 0-based and require no offset.
-
+> call_variants_changable.py usage instructions:  
+> The gene region and barcode coordinates must be updated based on the `minimap2` `.paf` output and the known barcode length.
+> - The gene region is passed as `(7791, 8202)` due to Python's 0-based indexing, even though the actual coding sequence starts at position 7792.
+> - The barcode is extracted from exact positions `8238–8253`, which are already 0-based and require no offset.
 
 
 ### 3. Run (example for HPC with LSF)
