@@ -27,7 +27,7 @@ docker pull sohinireddy0205/call-variants-dms-base:latest
 * A `call_variants_changable.py` script (included or customized)
 
 > call_variants_changable.py usage instructions:  
-> The gene region and barcode coordinates must be updated based on the `minimap2` `.paf` output and the known barcode length.
+> The gene region and barcode coordinates must be updated based on the minimap2 reference sequence coordinates and the known barcode length.
 > - The gene region is passed as `(7791, 8202)` due to Python's 0-based indexing, even though the actual coding sequence starts at position 7792.
 > - The barcode is extracted from exact positions `8238–8253`, and require no offset.
 
